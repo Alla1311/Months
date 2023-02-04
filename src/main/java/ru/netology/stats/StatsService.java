@@ -47,7 +47,7 @@ public class StatsService {
         long middleSum = getMiddleSalesSum(sales);
         int daysAmount = 0;
         for (int i = 0; i < sales.length; i++) {
-            if (sales[i] < getMiddleSalesSum(sales)) {
+            if (sales[i] < middleSum) {
                 daysAmount++;
             }
         }
